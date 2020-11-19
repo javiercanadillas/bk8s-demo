@@ -79,7 +79,7 @@ We're not going to discuss deploying objects on GKE today. You know what it take
 
 ## Deploying on Cloud Run for Anthos on GKE
 
-### Setting the environment
+### Setting up the environment
 
 Let's move now to deploying our services as KNative services. First, let's tell `gcloud` that we want to point Cloud Run to a GKE cluster:
 ```bash
