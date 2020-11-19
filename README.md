@@ -307,9 +307,11 @@ Finally, test first the back service to see we're not authorised:
 echo "${BACKEND_URL}" | pbcopy
 ```
 
-And test that the front service can access the back service:
+Open a browser tab and paste the clipboard contents. The backend service shouldn't be accessible.
+
+To test that the front service can access the back service, copy the frontend service URL into your clipboard:
 ```bash
 FRONTEND_URL=$(gcloud run services describe front | grep Traffic | cut -d " " -f2 | pbcopy)
 ```
 
-and add the **`/full`** at the end. Note that here, we're always using the FQDN for the services, and not internal cluster addresses.
+paste it into a new browser tab, and add the **`/full`** at the end of the service URL. Note that here, we're always using the FQDN for the services, and not internal cluster addresses.
