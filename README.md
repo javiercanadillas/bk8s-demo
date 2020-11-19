@@ -1,18 +1,18 @@
 # From GKE to Cloud Run, a journey
 
-This is a repo with the code and demo steps I've used for the [bk8s 2020 (Balearic Kubernetes Day)](https://www.meetup.com/awsusergrouppalma/events/273766784/). What's documented here works, but 
+This is a repo with the code and demo steps I've used for the [bk8s 2020 (Balearic Kubernetes Day)](https://www.meetup.com/awsusergrouppalma/events/273766784/). What's documented here works, but it assumens some basic knowledge of GCP, KNative, Cloud Run, Cloud Build and related technologies.
 
 ## Prerequirements
 
-You need to have:
+You'll need:
 
 - access to Google Cloud Platform with billing enabled (for this, the 300USD free credit are more than enough)
 - the Google Cloud SDK installed in your local machine.
-- created a configuration to work with gcloud (`gcloud config configurations...`).
-- activated the necessary Google Cloud APIs (if not, the gcloud command will be prompting you to do so).
-- installed the KNative command line tool, `kn`.
+- a configuration to work with gcloud (`gcloud config configurations...`), or the equivalent setup.
+- the necessary Google Cloud APIs enabled (if not, the gcloud command will be prompting you to do so).
+- the KNative command line tool, `kn`.
 - A minimum knowledge of the command line tool.
-- Install Visual Studio Code if you want to follow the Cloud Run deployment from the IDE step further down the doc.
+- Visual Studio Code if you want to follow the Cloud Run deployment from the IDE step further down the doc.
 
 This document assumes your're on Mac OS X, however I'm using UNIX POSIX power tools when possible which means it should work without major changes in Linux.
 
