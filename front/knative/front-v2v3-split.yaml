@@ -1,0 +1,24 @@
+apiVersion: serving.knative.dev/v1alpha1
+kind: Service
+metadata:
+  name: front
+  namespace: javiercm-gcprocks
+spec:
+  template:
+    metadata:
+      name: front-v3
+    spec:
+      containers:
+        - image: gcr.io/javiercm-gcprocks/front
+          env:
+            - name: TARGET
+              value: "v3"
+            - name: "BACKEND_URL"
+              value: "http://back.javiercm-gcprocks.svc.cluster.local"
+  traffic:
+  - tag: current
+    revisionName: front-v2
+    percent: 50
+  - tag: candidate
+    revisionName: front-v3
+    percent: 50

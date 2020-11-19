@@ -1,0 +1,28 @@
+# This file configures the hello-world app which serves public web traffic.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-gke
+      tier: front
+  template:
+    metadata:
+      labels:
+        app: hello-gke
+        tier: front
+    spec:
+      containers:
+      - name: front
+        image: gcr.io/javiercm-gcprocks/front:latest
+        ports:
+          - name: http
+            containerPort: 8080
+        env:
+          - name: PORT
+            value: "8080"
+          - name: BACKEND_URL
+            value: "http://back.default.svc.cluster.local"
