@@ -264,7 +264,7 @@ We'll be deploying the backend service to Cloud Run managed. We could be reusing
 
 Click **Deploy**. Unfortunately, for this release of Cloud Code, you need the local Docker daemon running and cannot use Cloud Build just yet.
 
-### Deploying a front service based using new code
+### Deploying a front service using new code
 
 We need now to build and deploy the new version of the front service. This new service uses OAuth2 to authenticate against the backend service presenting its associated service account as identity.
 
