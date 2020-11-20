@@ -137,6 +137,8 @@ curl -H 'Content-Type: text/plain' \
    "${EXTERNAL_IP}"
 ```
 
+> Note: if you want to use domain names instead of IPs and host headers, see [Changing GKE default domain to one usable for testing](https://cloud.google.com/run/docs/gke/default-domain)
+
 You should see something like:
 ```text
 Hello from frontend v1
