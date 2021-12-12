@@ -1,6 +1,6 @@
 # From GKE to Cloud Run, a journey
 
-This is a repo with the code and demo steps I've used for the [bk8s 2020 (Balearic Kubernetes Day)](https://www.meetup.com/awsusergrouppalma/events/273766784/). What's documented here works, but it assumens some basic knowledge of GCP, KNative, Cloud Run, Cloud Build and related technologies.
+This is a repo with the code and demo steps I've used for the [bk8s 2020 (Balearic Kubernetes Day)](https://www.meetup.com/awsusergrouppalma/events/273766784/). What's documented here works, but it assumes some basic knowledge of GCP, KNative, Cloud Run, Cloud Build and related technologies.
 
 ## Prerequirements
 
